@@ -1,0 +1,69 @@
+# Curated fish similarity edges (DRAFT). Loaded by hargaikan.pipeline.curated.load_similarity.
+#
+# HUMAN REVIEW REQUIRED (hard project rule): every edge below ships with `verified: false`.
+# The recommender only uses edges with `verified: true`, so until a reviewer checks an edge
+# (reason, basis and score) and sets it to true, that species gets "Tiada cadangan".
+# Never set `verified: true` without a human review. Scores here are draft ordering hints for
+# the reviewer, not measurements.
+#
+# Schema: edges are directed (from -> to = "to" may be suggested instead of "from").
+#   from: IKAN_...   to: IKAN_...   similarity_score: number in [0, 1]
+#   reason: Bahasa Melayu text      basis: [tekstur | rasa | kaedah_masakan | saiz | keluarga, ...]
+#   verified: false
+# Codes must exist in the species catalog; a species may not link to itself.
+
+- from: IKAN_BAWAL_HITAM
+  to: IKAN_BAWAL_PUTIH
+  similarity_score: 0.8
+  reason: Bentuk badan dan tekstur isi hampir sama.
+  basis: [tekstur, kaedah_masakan]
+  verified: false
+
+- from: IKAN_BAWAL_PUTIH
+  to: IKAN_BAWAL_HITAM
+  similarity_score: 0.8
+  reason: Bentuk badan dan tekstur isi hampir sama.
+  basis: [tekstur, kaedah_masakan]
+  verified: false
+
+- from: IKAN_MERAH
+  to: IKAN_JENAHAK
+  similarity_score: 0.75
+  reason: Kedua-duanya ikan jenis kakap dengan isi pejal dan rasa manis.
+  basis: [keluarga, tekstur, rasa]
+  verified: false
+
+- from: IKAN_JENAHAK
+  to: IKAN_MERAH
+  similarity_score: 0.75
+  reason: Kedua-duanya ikan jenis kakap dengan isi pejal dan rasa manis.
+  basis: [keluarga, tekstur, rasa]
+  verified: false
+
+- from: IKAN_KEMBUNG
+  to: IKAN_SELAR
+  similarity_score: 0.6
+  reason: Ikan bersaiz kecil yang biasa digoreng atau dibakar.
+  basis: [saiz, kaedah_masakan]
+  verified: false
+
+- from: IKAN_TENGGIRI
+  to: IKAN_TONGKOL
+  similarity_score: 0.55
+  reason: Isi pejal yang sesuai untuk masakan berkuah dan bersambal.
+  basis: [tekstur, kaedah_masakan]
+  verified: false
+
+- from: IKAN_SIAKAP
+  to: IKAN_JENAHAK
+  similarity_score: 0.6
+  reason: Isi putih dan sedikit tulang, sesuai untuk dikukus.
+  basis: [kaedah_masakan, tekstur]
+  verified: false
+
+- from: IKAN_KERISI
+  to: IKAN_SELAR
+  similarity_score: 0.5
+  reason: Ikan bersaiz sederhana kecil yang biasa digoreng atau dimasak asam.
+  basis: [saiz, kaedah_masakan]
+  verified: false

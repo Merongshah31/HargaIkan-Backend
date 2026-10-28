@@ -1,0 +1,27 @@
+# Maintained public transport fare table (bus / MRT / LRT / Monorel), read by
+# hargaikan.data.fares.load_fare_table.
+#
+# NO FARES ARE INVENTED. This file ships empty. Add an entry only from an official, checkable
+# source (e.g. the operator's published fare table) and record where it came from and when.
+# A route with no entry means the travel calculator asks the user for the fare instead.
+#
+# Entry format (one mapping per one-way trip; lookups match both directions):
+#   - mode: mrt | lrt | monorel | bas
+#     # either location codes (as used by the API's location list) ...
+#     from_location_code: <code>
+#     to_location_code: <code>
+#     # ... or station names (exactly one of the two pairs per entry)
+#     from_station: <station name>
+#     to_station: <station name>
+#     fare_rm: <number greater than 0>      # one-way fare in RM
+#     source: <publisher / URL of the fare>   # required
+#     updated_on: YYYY-MM-DD                  # required: date the fare was checked
+#
+# Example shape only (not real data, do not uncomment without a real source):
+#   - mode: mrt
+#     from_station: <Station A>
+#     to_station: <Station B>
+#     fare_rm: <fare>
+#     source: <operator fare page>
+#     updated_on: <YYYY-MM-DD>
+[]

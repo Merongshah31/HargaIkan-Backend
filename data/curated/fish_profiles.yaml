@@ -1,0 +1,93 @@
+# Curated fish profiles (DRAFT). Loaded by hargaikan.pipeline.curated.load_profiles.
+#
+# Review: these entries are first drafts written for the 10 demo species and have NOT been
+# checked by a human reviewer. Before relying on them, a reviewer should confirm each field
+# (texture, taste, bone level, cooking methods, allergen groups) against a trusted source and
+# fix anything wrong. Profiles feed the "profile differences" text shown next to a suggestion;
+# they never create a suggestion by themselves (only verified similarity edges do).
+#
+# Schema (one entry per species code; codes must exist in the species catalog):
+#   species_code: IKAN_...          texture: text      taste: text      bone_level: text
+#   cooking_methods: [text, ...]    allergen_groups: [text, ...]        notes: text or null
+# Vocabulary used here: texture lembut | pejal; bone_level sedikit | sederhana | banyak.
+# Keep text ASCII Bahasa Melayu so dump_profiles round-trips it unchanged.
+
+- species_code: IKAN_KEMBUNG
+  texture: lembut
+  taste: berlemak, rasa ikan kuat
+  bone_level: sederhana
+  cooking_methods: [goreng, bakar, masak asam pedas]
+  allergen_groups: [ikan_bersirip]
+  notes: null
+
+- species_code: IKAN_SELAR
+  texture: pejal
+  taste: manis sederhana
+  bone_level: sederhana
+  cooking_methods: [goreng, bakar, masak asam]
+  allergen_groups: [ikan_bersirip]
+  notes: null
+
+- species_code: IKAN_TONGKOL
+  texture: pejal
+  taste: rasa ikan kuat
+  bone_level: sedikit
+  cooking_methods: [masak kicap, gulai, sambal]
+  allergen_groups: [ikan_bersirip]
+  notes: null
+
+- species_code: IKAN_BAWAL_HITAM
+  texture: lembut
+  taste: manis sederhana
+  bone_level: sederhana
+  cooking_methods: [goreng, stim, masak asam]
+  allergen_groups: [ikan_bersirip]
+  notes: null
+
+- species_code: IKAN_BAWAL_PUTIH
+  texture: lembut
+  taste: manis
+  bone_level: sedikit
+  cooking_methods: [stim, goreng, masak asam]
+  allergen_groups: [ikan_bersirip]
+  notes: null
+
+- species_code: IKAN_MERAH
+  texture: pejal
+  taste: manis
+  bone_level: sedikit
+  cooking_methods: [kari, stim, bakar]
+  allergen_groups: [ikan_bersirip]
+  notes: null
+
+- species_code: IKAN_JENAHAK
+  texture: pejal
+  taste: manis
+  bone_level: sedikit
+  cooking_methods: [stim, kari, bakar]
+  allergen_groups: [ikan_bersirip]
+  notes: null
+
+- species_code: IKAN_SIAKAP
+  texture: lembut
+  taste: manis sederhana
+  bone_level: sedikit
+  cooking_methods: [stim, goreng, masak tiga rasa]
+  allergen_groups: [ikan_bersirip]
+  notes: null
+
+- species_code: IKAN_TENGGIRI
+  texture: pejal
+  taste: manis
+  bone_level: sedikit
+  cooking_methods: [goreng, masak asam pedas, kari]
+  allergen_groups: [ikan_bersirip]
+  notes: null
+
+- species_code: IKAN_KERISI
+  texture: lembut
+  taste: manis
+  bone_level: sederhana
+  cooking_methods: [goreng, masak asam, sup]
+  allergen_groups: [ikan_bersirip]
+  notes: null

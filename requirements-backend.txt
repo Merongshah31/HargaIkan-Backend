@@ -1,0 +1,16 @@
+# Runtime dependencies of the FastAPI backend only (Render). Every package is pinned with ==.
+# No streamlit, torch, sentence-transformers, pinecone or scikit-learn: the API never imports them.
+# Determined from sys.modules after importing hargaikan.api.main, building the demo dataset and
+# importing the Supabase repositories. pandas/numpy are needed by the demo dataset import chain.
+fastapi==0.162.0
+starlette==1.10.0
+pydantic==2.14.1
+uvicorn[standard]==0.54.0
+httpx==0.28.1
+supabase==2.33.0
+PyJWT==2.15.1
+rapidfuzz==3.14.6
+pyyaml==6.0.3
+python-dotenv==1.2.4
+numpy==2.4.6
+pandas==3.1.0

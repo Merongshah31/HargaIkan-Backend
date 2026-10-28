@@ -1,0 +1,33 @@
+# Backend (FastAPI / Python). Paths are relative to backend/.
+
+# Secrets (never commit)
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Raw source snapshots (large, not redistributed)
+data/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# Test and tool caches
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
